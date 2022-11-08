@@ -105,7 +105,7 @@ public class App
                         }
                         try {
                             ResultSet rs = bdUsuarios.verTodos();
-                            System.out.println("NUM\tNOMBRE\t\tPESO\tALTURA\t");
+                            System.out.println("ID\tNOMBRE\t\tAPELLIDOS\tNIF\t");
                             while (rs.next()){
                                 System.out.print(rs.getInt("ID") + "\t");
                                 System.out.print(rs.getString("NOMBRE") + "\t");

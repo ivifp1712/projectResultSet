@@ -11,14 +11,12 @@ import java.util.*;
 
 public class BDatos {
     private String cadenaConexion = "jdbc:mysql://localhost:3306/";
-    private String cadenaConexionposgre = "jdbc:postgresql://localhost:5432/";
     private String user = "root";
     private String pass = "amelia";
     private Connection con;
     private String tabla;
     public BDatos(String baseDatos, String user, String contra, String tabla, String bd) {
         this.cadenaConexion = this.cadenaConexion + baseDatos;
-        this.cadenaConexionposgre = this.cadenaConexion + baseDatos;
         this.user = user;
         this.pass = contra;
         this.tabla = tabla;
